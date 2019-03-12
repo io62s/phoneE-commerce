@@ -18,6 +18,12 @@ body {
   text-transform: capitalize;
 }
 
+.text-title-sec {
+  font-family: "Open Sans", sans-serif !important;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
 .text-blue {
   color: var(--mainBlue);
 }

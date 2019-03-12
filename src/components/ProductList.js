@@ -9,7 +9,7 @@ class ProductList extends Component {
       <Fragment>
         <div className="py-5">
           <div className="container">
-            <Title name="" title="porducts" />
+            <Title name="" title="products" />
             {/* PRODUCT ROW */}
             <div className="row">
               <ProductConsumer>

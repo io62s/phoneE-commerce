@@ -13,17 +13,17 @@ class Navbar extends Component {
         Creative Commons (Attribution 3.0 Unported);
         https://www.iconfinder.com/Makoto_msk */}
         <Link to="/">
-          <img src={logo} alt="store" className="navbar-brand" />
+          <img src={logo} alt="store" className="navbar-brand img" />
         </Link>
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5">
             <Link to="/" className="nav-link">
-              product
+              <i className="fas fa-list" /> &nbsp; products
             </Link>
           </li>
         </ul>
         <Link to="/cart" className="ml-auto">
-          <ButtonContainer>
+          <ButtonContainer cart>
             <span className="mr-2">
               <i className="fas fa-cart-plus" />
             </span>
@@ -36,14 +36,23 @@ class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  background: var(--lightBlue);
+  background: #fff;
   box-sizing: border-box;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   .nav-link {
-    color: var(--mainWhite) !important;
+    color: var(--mainDark) !important;
     font-size: 1.3rem;
     text-transform: capitalize;
     outline: none;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      color: var(--lightBlue) !important;
+    }
+  }
+
+  .img {
+    width: 2.5rem;
   }
 `;
 
