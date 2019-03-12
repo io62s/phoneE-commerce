@@ -7,7 +7,7 @@ import { ButtonContainer } from "./Button";
 class Navbar extends Component {
   render() {
     return (
-      <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5 shadow">
+      <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
         {/*
         https://www.iconfinder.com/icons/1243689/call_phone_icon
         Creative Commons (Attribution 3.0 Unported);
@@ -38,10 +38,12 @@ class Navbar extends Component {
 const NavWrapper = styled.nav`
   background: var(--lightBlue);
   box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   .nav-link {
     color: var(--mainWhite) !important;
     font-size: 1.3rem;
     text-transform: capitalize;
+    outline: none;
   }
 `;
 

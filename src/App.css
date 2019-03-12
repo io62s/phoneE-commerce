@@ -13,8 +13,8 @@ body {
 }
 
 .text-title {
-  font-family: "Gochi Hand", cursive;
-  letter-spacing: 0.3rem;
+  font-family: "Permanent Marker", cursive !important;
+  letter-spacing: 0.1rem;
   text-transform: capitalize;
 }
 
