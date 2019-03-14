@@ -16,7 +16,7 @@ class Product extends Component {
                 className="img-container p-5"
                 onClick={() => {
                   value.handleDetail(id);
-                  value.openModal(id);
+                  //value.openModal(id);
                 }}
               >
                 <Link to="/details">
@@ -25,7 +25,10 @@ class Product extends Component {
                 <button
                   className="cart-btn"
                   disabled={inCart ? true : false}
-                  onClick={() => value.addToCart(id)}
+                  onClick={() => {
+                    value.addToCart(id);
+                    value.openModal(id);
+                  }}
                 >
                   {inCart ? (
                     <p className="text-capitalize mb-0" disabled>
@@ -87,7 +90,7 @@ const ProductWrapper = styled.div`
   }
 
   .img-container:hover .card-img-top {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   .cart-btn {
