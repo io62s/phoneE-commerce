@@ -10,7 +10,7 @@ const CartItem = ({ item, value }) => {
         <img
           src={img}
           alt="phone img"
-          style={{ width: "5rem" }}
+          style={{ width: "8rem" }}
           className="img-fluid"
         />
       </div>

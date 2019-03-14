@@ -11,8 +11,7 @@ class Cart extends Component {
     return (
       <section
         style={{
-          marginTop: "6rem",
-          boxSizing: "border-box"
+          marginTop: "6rem"
         }}
       >
         <ProductConsumer>
