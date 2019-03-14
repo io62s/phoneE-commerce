@@ -19,6 +19,7 @@ class ProductProvider extends Component {
   setProducts = () => {
     let products = [];
 
+    //get product objects from data file (store product array of objects) and add them to product array
     storeProducts.forEach(item => {
       const singleItem = { ...item };
       products = [...products, singleItem];
@@ -30,6 +31,7 @@ class ProductProvider extends Component {
   };
 
   getItem = id => {
+    //find product with matching id from products array
     const product = this.state.products.find(item => item.id === id);
     return product;
   };
@@ -42,7 +44,9 @@ class ProductProvider extends Component {
   };
 
   addToCart = id => {
+    //copy products array from state to temp array
     let tempProducts = [...this.state.products];
+    //get index of the product
     const index = tempProducts.indexOf(this.getItem(id));
     const product = tempProducts[index];
     product.inCart = true;
