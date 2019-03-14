@@ -25,7 +25,7 @@ class Navbar extends Component {
         <Link to="/cart" className="ml-auto">
           <ButtonContainer cart>
             <span className="mr-2">
-              <i className="fas fa-cart-plus" />
+              <i className="fas fa-shopping-cart" />
             </span>
             cart
           </ButtonContainer>
