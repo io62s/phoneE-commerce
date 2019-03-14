@@ -36,6 +36,11 @@ class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background: #fff;
   box-sizing: border-box;
   border-bottom: 2px solid var(--mainYellow);
